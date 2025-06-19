@@ -62,3 +62,32 @@ Only respond with this exact JSON format:
 }
 ]
 
+ 
+
+## 🧪 Setup Instructions
+
+```bash
+# 1. Clone repo
+git clone https://github.com/<your-username>/credit-card-advisor.git
+cd credit-card-advisor
+
+# 2. Install backend dependencies
+cd backend
+npm install
+
+# 3. Create `.env` file
+touch .env
+
+# .env contents
+OPENROUTER_API_KEY=your-key-here
+
+# 4. Start backend
+node server.js
+
+# 5. Install frontend dependencies
+cd ../frontend
+npm install
+
+# 6. Start frontend
+npm run dev
+
