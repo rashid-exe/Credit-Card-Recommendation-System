@@ -12,7 +12,7 @@ function App() {
 
   const handleCompare = async () => {
     try {
-      const res = await axios.get('http://localhost:5050/cards');
+      const res = await axios.get('https://my-production-6c3a.up.railway.app/cards');
       const fullCardData = res.data;
 
       const enriched = recommendations.map((rec) => {

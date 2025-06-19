@@ -43,7 +43,7 @@ const ChatUI = ({ setStep, setUserData, setRecommendations }) => {
     console.log("🚀 Submit triggered");
 
     try {
-      const res = await axios.post('http://localhost:5050/agent', form);
+      const res = await axios.post('my-production-6c3a.up.railway.app', form);
       console.log("✅ Received recommendations:", res.data.recommendations);
 
       setUserData(form);
