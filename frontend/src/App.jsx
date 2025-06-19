@@ -3,6 +3,7 @@ import ChatUI from './components/ChatUI';
 import SummaryScreen from './components/SummaryScreen';
 import CompareCards from './components/CompareCards';
 import axios from 'axios';
+const baseURL = import.meta.env.VITE_API_BASE_URL;
 
 function App() {
   const [step, setStep] = useState(1);
@@ -12,7 +13,7 @@ function App() {
 
   const handleCompare = async () => {
     try {
-      const res = await axios.get('https://my-production-6c3a.up.railway.app/cards');
+      const res = await axios.get(`${baseURL}/cards`); // 🔧 fetch full card data
       const fullCardData = res.data;
 
       const enriched = recommendations.map((rec) => {

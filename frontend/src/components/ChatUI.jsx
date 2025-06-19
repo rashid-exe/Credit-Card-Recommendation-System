@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Select from 'react-select';
 
+const baseURL = import.meta.env.VITE_API_BASE_URL;
+
 const benefitOptions = [
   { label: 'Lounge Access', value: 'Lounge Access' },
   { label: 'Cashback', value: 'Cashback' },
@@ -43,7 +45,7 @@ const ChatUI = ({ setStep, setUserData, setRecommendations }) => {
     console.log("🚀 Submit triggered");
 
     try {
-      const res = await axios.post('my-production-6c3a.up.railway.app', form);
+      const res = await axios.post(`${baseURL}/agent`, form);
       console.log("✅ Received recommendations:", res.data.recommendations);
 
       setUserData(form);

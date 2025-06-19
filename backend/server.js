@@ -26,7 +26,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
   baseURL: 'https://openrouter.ai/api/v1',
   defaultHeaders: {
-    'HTTP-Referer': 'http://localhost:5173',
+    'HTTP-Referer': process.env.REFERER_URL || 'http://localhost:5173',
     'X-Title': 'CreditCardAdvisor'
   }
 });
