@@ -2,7 +2,7 @@
 
 A smart LLM-powered conversational agent that recommends the best Indian credit cards based on your income, spending habits, and preferences.
 
-![Demo](./demo.gif) <!-- You can upload demo.gif or use a Loom/Youtube link -->
+![Demo](Drive link of screen recording) (https://drive.google.com/file/d/1otBTR0sYlC4vMBwIPic39EsbhKYvZRfU/view?usp=sharing)
 
 ---
 
