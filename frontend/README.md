@@ -1,12 +1,38 @@
-# React + Vite
+# 💳 Credit Card Advisor — Conversational AI Agent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A smart LLM-powered conversational agent that recommends the best Indian credit cards based on your income, spending habits, and preferences.
 
-Currently, two official plugins are available:
+![Demo](./demo.gif) <!-- You can upload demo.gif or use a Loom/Youtube link -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+ 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🖥️ Frontend: https://credit-card-recommendation-system-20z5luoju.vercel.app/  
+🔙 Backend:https://my-production-6c3a.up.railway.app/
+
+---
+
+## 📦 Tech Stack
+
+- **Frontend**: React + Tailwind CSS
+- **Backend**: Node.js + Express
+- **LLM**: OpenRouter (GPT-3.5-turbo)
+- **State Management**: React useState
+- **Data Storage**: Static JSON for cards
+
+---
+
+## 🧠 Conversational Agent Flow
+
+1. User fills a form with income, preferences, credit score.
+2. Prompt is dynamically constructed based on:
+   - Card database (loaded from `cards.json`)
+   - User inputs (income, benefits, spending)
+3. LLM response is parsed and rendered.
+4. Bonus: Option to compare shortlisted cards via `/cards` API.
+
+---
+
+## 🤖 Prompt Design (used in `/agent` route)
+
